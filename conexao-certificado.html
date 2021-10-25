@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBREP - CONEXÃO</title>
+  <link rel="icon" href="https://app.ibrep.com.br/assets/icons/cropped-favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://app.ibrep.com.br/assets/icons/cropped-favicon-192x192.png" sizes="192x192" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://app.ibrep.com.br/assets/materialize.min.css" rel="stylesheet" />
+  <link href="https://app.ibrep.com.br/assets/ibrep.css" rel="stylesheet" />
+  <style>
+    body {
+      background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/127406/1623254476/$k1h3erqh25e);
+      background-position-x: 50%;
+      background-position-y: 50%;
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-attachment: scroll;
+      box-shadow: none;
+    }
+
+    .card.card-container {
+      width: 100%;
+      padding: 20px;
+      min-height: 400px;
+      display: block;
+      margin: auto;
+      backdrop-filter: blur(90px);
+      background-color: transparent;
+      color: white;
+      border-radius: 20px;
+    }
+
+    nav {
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .instalacao {
+      border: 2px solid black;
+      padding: 10px;
+      border-radius: 1em;
+      position: relative;
+    }
+
+    br {
+      clear: both;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    .input-field>label {
+      color: white;
+    }
+
+    input:not([type]):focus:not([readonly])+label,
+    input[type="text"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="password"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="email"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="url"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="time"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="date"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="datetime"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="tel"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="number"]:not(.browser-default):focus:not([readonly])+label,
+    input[type="search"]:not(.browser-default):focus:not([readonly])+label,
+    textarea.materialize-textarea:focus:not([readonly])+label {
+      color: white;
+    }
+
+    input:not([type]),
+    input[type="text"]:not(.browser-default),
+    input[type="password"]:not(.browser-default),
+    input[type="email"]:not(.browser-default),
+    input[type="url"]:not(.browser-default),
+    input[type="time"]:not(.browser-default),
+    input[type="date"]:not(.browser-default),
+    input[type="datetime"]:not(.browser-default),
+    input[type="datetime-local"]:not(.browser-default),
+    input[type="tel"]:not(.browser-default),
+    input[type="number"]:not(.browser-default),
+    input[type="search"]:not(.browser-default),
+    textarea.materialize-textarea {
+      border-bottom: 1px solid white;
+    }
+
+    input:not([type]):focus:not([readonly]),
+    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    input[type="password"]:not(.browser-default):focus:not([readonly]),
+    input[type="email"]:not(.browser-default):focus:not([readonly]),
+    input[type="url"]:not(.browser-default):focus:not([readonly]),
+    input[type="time"]:not(.browser-default):focus:not([readonly]),
+    input[type="date"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+    input[type="tel"]:not(.browser-default):focus:not([readonly]),
+    input[type="number"]:not(.browser-default):focus:not([readonly]),
+    input[type="search"]:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom: 1px solid white;
+      -webkit-box-shadow: 0 1px 0 0 white;
+      box-shadow: 0 1px 0 0 white;
+    }
+
+    input {
+      color: white;
+    }
+
+    .logo-conexao {
+      display: block;
+      margin: auto;
+      width: 25%;
+    }
+
+    @media only screen and (max-width: 740px) {
+      .logo-conexao {
+        display: block;
+        margin: auto;
+        width: 55%;
+      }
+    }
+
+    .z-depth-5:hover {
+      box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    }
+
+    .btn.white {
+      background-color: transparent !important;
+      backdrop-filter: blur(100px);
+    }
+
+    .btn.white:hover {
+      background-color: rgba(255, 255, 255, 0.192) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="https://ibrep.com.br/" class="brand-logo"><img src="https://app.ibrep.com.br/assets/logo.png" /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a target="_blank" href="https://ibrep.com.br/contato/" class="waves-effect waves-light btn">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img style="width: 310px; filter: blur(3px)" src="https://app.ibrep.com.br/assets/bkg.png" />
+        </div>
+        <a><img class="circle" src="https://app.ibrep.com.br/assets/icons/app.png" /></a>
+        <a><span class="white-text name"></span></a>
+        <a><span class="white-text email"></span></a>
+      </div>
+    </li>
+    <li>
+      <a target="_blank" href="https://ibrep.com.br/contato/">Contato</a>
+    </li>
+  </ul>
+  <div class="container valign-wrapper" style="flex-direction: column">
+    <div style="z-index: 500" class="card z-depth-5 card-container">
+      <img class="logo-conexao" src="https://d335luupugsy2.cloudfront.net/cms/files/127406/1623254476/$8thvewx6hio" />
+
+      <form>
+        <div class="input-field inverted">
+          <input id="Nome" name="Nome" type="text" class="validate" required />
+          <label for="Nome">Nome*</label>
+        </div>
+
+        <div class="input-field inverted">
+          <input id="Cpf" name="Cpf" type="text" class="validate" required onchange="valida_cpf(this)" />
+          <label for="Cpf">CPF*</label>
+        </div>
+
+        <br /><br />
+
+        <a type="submit" onclick="gerarCertificado()" class="waves-effect waves-light btn white fluid">Gerar
+          Certificado</a>
+      </form>
+    </div>
+
+    <img src="https://app.ibrep.com.br/assets/logo.png" style="
+          margin-top: 2vw;
+          background-color: #00000026;
+          backdrop-filter: blur(2px);
+          border-radius: 20px;
+          padding: 14px;
+          max-width: 30%;
+          box-shadow: 0 24px 38px 3px rgb(0 0 0 / 14%),
+            0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);
+          z-index: 500;
+        " />
+  </div>
+  <p style="
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      ">
+    © 2021 | Instituto Brasileiro de Educação Profissional. Todos os Direitos
+    Reservados.
+  </p>
+</body>
+
+<script src="https://app.ibrep.com.br/assets/materialize.min.js"></script>
+<script src="https://app.ibrep.com.br/assets/values.js"></script>
+<script src="ibrep-public.js"></script>
+<script>
+  function gerarCertificado() {
+    if (!document.getElementById("Nome").value) {
+      document.getElementById("Cpf").focus();
+      document.getElementById("Nome").focus();
+      document.getElementById("Nome").blur();
+      return;
+    }
+
+    if (!document.getElementById("Cpf").value) {
+      document.getElementById("Cpf").focus();
+      document.getElementById("Cpf").blur();
+      return;
+    }
+
+    window.location.href = `https://app.ibrep.com.br/p/conexao-certificado-gerar?nome=${document.getElementById("Nome").value
+      }&cpf=${document
+        .getElementById("Cpf")
+        .value.replaceAll(".", "")
+        .replaceAll("-", "")}`;
+  }
+
+  function valida_cpf(cpf_input) {
+    cpf = cpf_input.value.replaceAll(".", "").replaceAll("-", "");
+
+    var numeros, digitos, soma, i, resultado, digitos_iguais;
+    digitos_iguais = 1;
+    if (cpf.length != 11) {
+      alert("CPF Inválido");
+      cpf_input.value = "";
+      return false;
+    }
+
+    for (i = 0; i < cpf.length - 1; i++)
+      if (cpf.charAt(i) != cpf.charAt(i + 1)) {
+        digitos_iguais = 0;
+        break;
+      }
+    if (!digitos_iguais) {
+      numeros = cpf.substring(0, 9);
+      digitos = cpf.substring(9);
+      soma = 0;
+      for (i = 10; i > 1; i--) soma += numeros.charAt(10 - i) * i;
+      resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
+      if (resultado != digitos.charAt(0)) {
+        alert("CPF Inválido");
+        cpf_input.value = "";
+        return false;
+      }
+      numeros = cpf.substring(0, 10);
+      soma = 0;
+      for (i = 11; i > 1; i--) soma += numeros.charAt(11 - i) * i;
+      resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
+      if (resultado != digitos.charAt(1)) {
+        alert("CPF Inválido");
+        cpf_input.value = "";
+        return false;
+      }
+      return true;
+    } else {
+      alert("CPF Inválido");
+      cpf_input.value = "";
+      return false;
+    }
+  }
+</script>
+<script src="https://app.ibrep.com.br/assets/consultaCep.js"></script>
+
+</html>
